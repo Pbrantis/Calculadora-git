@@ -1,7 +1,8 @@
-from calculadora import subtracao
+from calculadora import subtracao, media_aritmetica
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
+    "2": ("Média Aritmética", media_aritmetica),
 }
 
 
