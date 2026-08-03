@@ -11,6 +11,7 @@ else:
 def subtracao(a,b):
     return a-b
 
+#TESTANDO ESSA FEATURE (COMENTÁRIO)
 def soma(a,b):
     return a+b# operacoes.py
 
