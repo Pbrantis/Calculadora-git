@@ -8,3 +8,9 @@ if numero > 0 and base > 0 and base != 1:
     print("Resultado:", resultado)
 else:
     print("Número ou base inválidos.")
+def subtracao(a,b):
+    return a-b
+
+def soma(a,b):
+    return a+b
+
