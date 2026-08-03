@@ -1,6 +1,5 @@
 import calculadora
 
-
 def exibir_menu():
     while True:
         print("=== MENU DE OPÇÕES ===")
