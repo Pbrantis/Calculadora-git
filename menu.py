@@ -4,7 +4,8 @@ from calculadora import subtracao, dividir, media_aritmetica
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
-    "2": ("Média Aritmética", media_aritmetica),
+    "2": ("Divisão", dividir),
+    "3": ("Média Aritmética", media_aritmetica),
 }
 
 def mostrar_menu():
