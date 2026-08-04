@@ -54,4 +54,4 @@ def logaritmo(numero, base):
         return math.log(numero, base)
     return "Número ou base inválidos."
 
-# TESTANDO
+
