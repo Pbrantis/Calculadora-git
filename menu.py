@@ -1,14 +1,15 @@
 
-from calculadora import subtracao, dividir, media_aritmetica, maximo
-
+from calculadora import dividir, media_aritmetica, subtracao, calcular_cosseno, maximo
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
-    "2": ("Divisão", dividir),
-    "3": ("Média Aritmética", media_aritmetica),
-    "4": ("Máximo entre dois números", maximo)
+    "2": ("Cosseno", calcular_cosseno),
+    "3": ("Divisão", dividir),
+    "4": ("Média Aritmética", media_aritmetica),
+    "5": ("Máximo entre dois números", maximo)
 
 }
+
 
 def mostrar_menu():
     print("=== Calculadora Git ===")
@@ -28,15 +29,22 @@ def executar():
             print("Opção inválida. Tente novamente.")
             continue
         nome, funcao = OPERACOES[escolha]
-        a = float(input("Primeiro número: "))
-        b = float(input("Segundo número: "))
-        try:
+
+        if escolha == "3":
+            a = float(input("Digite o ângulo em graus: "))
+            resultado = funcao(a)
+        else:
+            a = float(input("Primeiro número: "))
+            b = float(input("Segundo número: "))
             resultado = funcao(a, b)
+
+        try:
+            pass
         except ValueError as erro:
             print(f"Erro: {erro}")
         else:
             print(f"{nome}: {resultado}")
 
+
 if __name__ == "__main__":
     executar()
-
