@@ -1,9 +1,13 @@
-
 def subtracao(a,b):
     return a-b
 
 def soma(a,b):
     return a+b
+
+def dividir(a, b):
+    if b == 0:
+        raise ValueError("Não é possível dividir por zero!")
+    return a / b
 
 def calcular_fatorial(n):
     if n == 0 or n == 1:
@@ -19,18 +23,3 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
 
     tangente = cateto_oposto / cateto_adjacente
     return tangente
-
-
-# Testando a função
-oposto = 10
-adjacente = 5
-resultado = calcular_tangente_triangulo(oposto, adjacente)
-print(f"A tangente do ângulo é {resultado:.4f}")
-
-
-
-def dividir(a, b):
-    if b == 0:
-        raise ValueError("Não é possível dividir por zero!")
-    return a / b
-
