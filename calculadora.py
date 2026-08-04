@@ -3,7 +3,7 @@ def subtracao(a,b):
 
 def soma(a,b):
     return a+b
-  
+
 def media_aritmetica(a, b):
     return (a + b) / 2
 
@@ -27,3 +27,9 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
     tangente = cateto_oposto / cateto_adjacente
     return tangente
 
+import math
+
+def logaritmo(numero, base):
+    if numero > 0 and base > 0 and base != 1:
+        return math.log(numero, base)
+    return "Número ou base inválidos."
