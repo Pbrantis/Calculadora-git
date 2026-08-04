@@ -2,6 +2,7 @@ from calculadora import subtracao, dividir
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
+    "2": ("Divisão", dividir)
 }
 
 def mostrar_menu():
