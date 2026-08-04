@@ -1,11 +1,13 @@
-from calculadora import dividir, media_aritmetica, subtracao, calcular_cosseno
+
+from calculadora import dividir, media_aritmetica, subtracao, calcular_cosseno, maximo
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
-    "2": ("Média Aritmética", media_aritmetica),
-    "3": ("Cosseno", calcular_cosseno),
-    "2": ("Divisão", dividir),
-    "3": ("Média Aritmética", media_aritmetica),
+    "2": ("Cosseno", calcular_cosseno),
+    "3": ("Divisão", dividir),
+    "4": ("Média Aritmética", media_aritmetica),
+    "5": ("Máximo entre dois números", maximo)
+
 }
 
 
@@ -37,7 +39,6 @@ def executar():
             resultado = funcao(a, b)
 
         try:
-            # O bloco try/except permanece para tratar possíveis exceções
             pass
         except ValueError as erro:
             print(f"Erro: {erro}")
