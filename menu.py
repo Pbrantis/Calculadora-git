@@ -4,6 +4,8 @@ OPERACOES = {
     "1": ("Subtração", subtracao),
     "2": ("Média Aritmética", media_aritmetica),
     "3": ("Cosseno", calcular_cosseno),
+    "2": ("Divisão", dividir),
+    "3": ("Média Aritmética", media_aritmetica),
 }
 
 
