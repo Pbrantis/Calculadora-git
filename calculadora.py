@@ -53,3 +53,5 @@ def logaritmo(numero, base):
     if numero > 0 and base > 0 and base != 1:
         return math.log(numero, base)
     return "Número ou base inválidos."
+
+# TESTANDO
