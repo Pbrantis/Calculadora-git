@@ -1,11 +1,13 @@
 
-from calculadora import subtracao, dividir, media_aritmetica
+from calculadora import subtracao, dividir, media_aritmetica, maximo
 
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
     "2": ("Divisão", dividir),
     "3": ("Média Aritmética", media_aritmetica),
+    "4": ("Máximo entre dois números", maximo)
+
 }
 
 def mostrar_menu():

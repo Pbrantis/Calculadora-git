@@ -26,4 +26,5 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
 
     tangente = cateto_oposto / cateto_adjacente
     return tangente
-
+def maximo(a, b):
+    return max(a, b)
