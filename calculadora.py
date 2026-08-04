@@ -27,3 +27,7 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
     tangente = cateto_oposto / cateto_adjacente
     return tangente
 
+
+def multiplicar(a, b):
+    return a * b
+
