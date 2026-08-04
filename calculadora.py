@@ -4,6 +4,14 @@ def subtracao(a,b):
 def soma(a,b):
     return a+b
 
+def media_aritmetica(a, b):
+    return (a + b) / 2
+
+def dividir(a, b):
+    if b == 0:
+        raise ValueError("Não é possível dividir por zero!")
+    return a / b
+
 def calcular_fatorial(n):
     if n == 0 or n == 1:
         return 1
@@ -19,10 +27,6 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
     tangente = cateto_oposto / cateto_adjacente
     return tangente
 
-
-
-
-
 def dividir(a, b):
     if b == 0:
         raise ValueError("Não é possível dividir por zero!")
@@ -35,3 +39,14 @@ def calcular_exponencial(x):
         termo = (x ** n) / calcular_fatorial(n)
         resultado += termo
     return resultado
+def calcular_cosseno(angulo_graus):
+    import math
+
+    return math.cos(math.radians(angulo_graus))
+
+import math
+
+def logaritmo(numero, base):
+    if numero > 0 and base > 0 and base != 1:
+        return math.log(numero, base)
+    return "Número ou base inválidos."
