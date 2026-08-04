@@ -3,6 +3,9 @@ def subtracao(a,b):
 
 def soma(a,b):
     return a+b
+  
+def media_aritmetica(a, b):
+    return (a + b) / 2
 
 def dividir(a, b):
     if b == 0:
@@ -23,3 +26,4 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
 
     tangente = cateto_oposto / cateto_adjacente
     return tangente
+
