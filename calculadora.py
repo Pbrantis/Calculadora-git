@@ -27,3 +27,8 @@ def calcular_tangente_triangulo(cateto_oposto, cateto_adjacente):
     tangente = cateto_oposto / cateto_adjacente
     return tangente
 
+def calcular_cosseno(angulo_graus):
+    import math
+
+    return math.cos(math.radians(angulo_graus))
+
