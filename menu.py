@@ -1,10 +1,11 @@
-from calculadora import subtracao, media_aritmetica
+
+from calculadora import subtracao, dividir, media_aritmetica
+
 
 OPERACOES = {
     "1": ("Subtração", subtracao),
     "2": ("Média Aritmética", media_aritmetica),
 }
-
 
 def mostrar_menu():
     print("=== Calculadora Git ===")
@@ -33,6 +34,6 @@ def executar():
         else:
             print(f"{nome}: {resultado}")
 
-
 if __name__ == "__main__":
     executar()
+
